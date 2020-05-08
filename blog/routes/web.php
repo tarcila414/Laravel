@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('hello-world','HelloWorldController@index');
+
+Route::get('/post/{slug}',function($slug){
+    return $slug;
+});
